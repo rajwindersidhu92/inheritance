@@ -1,10 +1,11 @@
 package com.lambton.college;
 
 import com.lambton.hardware.Computer;
+import com.lambton.other.IDisplay;
 
 import java.util.Date;
 
-public class Person {
+public abstract class Person implements IDisplay {
         private int id;
         private String firstName;
         private String lastName;

@@ -1,7 +1,12 @@
-package com.lambton.college;
+package com.lambton;
 
+import com.lambton.college.Faculty;
+import com.lambton.college.Student;
 import com.lambton.hardware.Laptop;
 import com.lambton.hardware.Computer;
+
+import java.util.Date;
+
 public class Day5InheritnceExample {
     public static void main(String[] args){
        int marks[] = new int[]{99,24,73,74,88,99};
@@ -32,7 +37,7 @@ public class Day5InheritnceExample {
        f1.setDepartmenttName("cse");
        f1.setDesignation("Senior prof");
        f1.setSalary(100000);
-
+       f1.setJoiningDate(new Date(System.currentTimeMillis()));
 
         System.out.println(s1.getId());
         System.out.println(s1.getFirstName());
@@ -53,6 +58,9 @@ public class Day5InheritnceExample {
         System.out.println(f1.getDepartmenttName());
         System.out.println(f1.getDesignation());
         System.out.println(f1.getSalary());
+        System.out.println(f1.getJoiningDate());
 
     }
 }
+
+

@@ -1,5 +1,7 @@
 package com.lambton.college;
 
+import com.lambton.other.IDisplay;
+
 public class Student extends Person {
     private String course;
     private int marks[] = new int[6];
@@ -88,6 +90,12 @@ public class Student extends Person {
             return "D";
         }
 
+
+    }
+
+
+    @Override
+    public void display() {
 
     }
 }
